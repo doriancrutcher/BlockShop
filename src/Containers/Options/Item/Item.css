@@ -1,0 +1,27 @@
+.optionDescription{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    cursor: pointer;
+
+}
+
+.itemImg img{
+width:30vw;
+}
+
+.optionDescription{
+    background-color: rgb(97, 97, 97);
+}
+
+.price{
+    background-color: white;
+    color:black;
+    border: black 3px solid;
+    padding:5%;
+    margin-bottom: 10%;
+}
+

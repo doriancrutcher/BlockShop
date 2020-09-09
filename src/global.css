@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding:0
+}
+
+.container{
+  background-color: rgb(46, 46, 46);
+  height:100%;
+  padding-top: 10%;
+}
+
+.optionsAndCart{
+
+  width:60hw;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  
+
+}
+/* 
+.cartContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:10%;
+} */

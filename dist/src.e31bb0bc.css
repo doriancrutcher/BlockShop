@@ -1,0 +1,159 @@
+*{
+  margin: 0;
+  padding:0
+}
+
+.container{
+  background-color: rgb(46, 46, 46);
+  height:100%;
+  padding-top: 10%;
+}
+
+.optionsAndCart{
+
+  width:60hw;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  
+
+}
+/* 
+.cartContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:10%;
+} */
+.barHouse{
+    height: 6vh;
+    background: black;
+    color:white;
+    display:grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.pageTitle{
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    padding-left:5%;
+}
+
+.account{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.cartContainer{
+    background-color: rgb(110, 110, 110);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+  
+    padding:5%
+
+
+}
+
+.cartContainer img{
+    width:10vw;
+  
+
+}
+
+
+
+
+.cartIMG{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+
+.checkoutList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color:black;
+    padding:10%;
+    margin-bottom: 10%;
+    width: 25vw;
+    flex-direction: column;
+
+
+
+}
+
+.total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    width: 25vw;
+    margin-bottom: 10%;
+    padding:5%;
+    border: solid black 3px;
+    
+}
+
+
+
+.submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10%;
+    
+
+
+}
+
+@media
+.optionDescription{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    cursor: pointer;
+
+}
+
+.itemImg img{
+width:30vw;
+}
+
+.optionDescription{
+    background-color: rgb(97, 97, 97);
+}
+
+.price{
+    background-color: white;
+    color:black;
+    border: black 3px solid;
+    padding:5%;
+    margin-bottom: 10%;
+}
+
+
+.optionHouse{
+    margin:auto;
+    background-color: gray;
+    width:40vw;
+    padding: 5% 10%
+}
+
+/*# sourceMappingURL=/src.e31bb0bc.css.map */
