@@ -40,7 +40,7 @@ class Cart extends Component {
 
     startTransaction=async()=>{
         let CheckoutList = this.state.cartList.map(x=>x.name)
-        window.account.sendMoney('blockshop.testnet',3000000000)
+        window.account.sendMoney('blockshop.testnet',300000000000)
         .then(()=>[
             window.contract.deliverProducts({checkout:CheckoutList})
         ])

@@ -31,6 +31,7 @@
     "react-test-renderer": "^16.13.1"
   },
   "dependencies": {
+    "big.js": "^5.2.2",
     "near-api-js": "^0.27.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

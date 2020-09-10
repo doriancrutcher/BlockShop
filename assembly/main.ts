@@ -28,6 +28,10 @@ export function getGreeting(accountId: string): string | null {
   return storage.get<string>(accountId, DEFAULT_MESSAGE);
 }
 
+export function sendCashNow(text:string):void{
+logging.log(text)
+}
+
 export function setGreeting(message: string): void {
   const account_id = Context.sender;
 
@@ -55,6 +59,7 @@ export function deliverProducts(checkout:string[]):void{
   }
   else{
     customerInventory.set(Context.sender,checkout)
+    logging.log(customerInventory.getSome(Context.sender))
   }
 }
 

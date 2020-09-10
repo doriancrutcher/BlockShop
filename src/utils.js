@@ -11,7 +11,7 @@ export async function initContract() {
   const near = await connect(Object.assign({ deps: { keyStore: new keyStores.BrowserLocalStorageKeyStore() } }, nearConfig))
   console.log(near)
 
-
+  window.near = near;
   // Initializing Wallet based Account. It can work with NEAR testnet wallet that
   // is hosted at https://wallet.testnet.near.org
   window.walletConnection = new WalletConnection(near)
@@ -30,7 +30,7 @@ export async function initContract() {
     // View methods are read only. They don't modify the state, but usually return some value.
     viewMethods: ['getGreeting','getName'],
     // Change methods can modify the state. But you don't receive the returned value when called.
-    changeMethods: ['setGreeting','deliverProducts'],
+    changeMethods: ['setGreeting','deliverProducts','sendCashNow']
   })
 }
 
@@ -75,6 +75,6 @@ export function login() {
   // user's behalf.
   // This works by creating a new access key for the user's account and storing
   // the private key in localStorage.
-  window.walletConnection.requestSignIn(nearConfig.contractName)
+  window.walletConnection.requestSignIn('')
 }
 
